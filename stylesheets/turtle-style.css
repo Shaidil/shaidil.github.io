@@ -1,0 +1,16 @@
+body {
+    font-family: 'IM Fell English', serif;
+    font-size: 14pt;
+    background: #000;
+    color: #fff;
+}
+a {
+    color: #888;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #666;
+}
+h3 {
+    padding-bottom: 10pt;
+}
