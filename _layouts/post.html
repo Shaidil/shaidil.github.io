@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:url" content="http://happyturtlethings.net{{page.url}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{page.title|strip_html|xml_escape}}">
+<meta property="og:description" content="{{content|strip_html|xml_escape|normalize_whitespace}}">
     <link href="/stylesheets/turtle-style.css" rel="stylesheet" type="text/css">
     <link href="/stylesheets/shariff.complete.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=IM+Fell+English' rel="stylesheet" type='text/css'>
@@ -17,11 +21,11 @@
       it in short lines.<br>
       Find out more about me on the
       <a href="http://happyturtlethings.net">main page</a>;
-      contact me through <a href="mailto:happyturtlethings@gmail.com">e-mail</a>.
+      tell me I'm wrong at <a href="mailto:happyturtlethings@gmail.com">e-mail</a>.
     </p>
 <a href="{{page.url}}"><h2 id="{{ page.short }}" >{{ page.title }}</h2></a>
     {{ content }}
-    <div class="shariff" data-lang="en" data-theme="grey" data-twitter-via="Turtle_Things" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;reddit&quot;]" data-title="{{ post.title }}" data-url="http://happyturtlethings.com/{{ page.url }}"></div>
+    <div class="shariff" data-lang="en" data-theme="grey" data-twitter-via="Turtle_Things" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;reddit&quot;]" data-title="{{ post.title }}" data-url="http://happyturtlethings.net{{ page.url }}"></div>
     <a href="/post.html">back to all posts</a>
     <script src="/javascripts/shariff.complete.js"></script>
   </body>
