@@ -14,3 +14,7 @@ a:hover {
 h3 {
     padding-bottom: 10pt;
 }
+
+.highlight {
+    color: #cc8abc;
+}
