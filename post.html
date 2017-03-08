@@ -18,9 +18,8 @@
       <a href="http://happyturtlethings.net">main page</a>;
       tell me I'm wrong through <a href="mailto:happyturtlethings@gmail.com">e-mail</a>.
     </p>
-
-{% for post in site.posts %}
-<a href="{{post.url}}"><h3 id="{{ post.short }}" >{{ post.title }}</h3></a>
+{% for post in site.categories.science %}
+<a href="{{post.url}}"><h3>{{ post.title }}</h3></a>
     {{ post.content }}
     <div class="shariff" data-lang="en" data-theme="grey" data-twitter-via="Turtle_Things" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;reddit&quot;]" data-title="{{ post.title }}" data-url="http://happyturtlethings.net{{ post.url }}"></div>
 {% endfor %}

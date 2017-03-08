@@ -1,21 +1,23 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="stylesheets/turtle-style.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet">
-        <title>Unwarranted Cooking Attempts</title>
-    </head>
-    <body>
-        <center style="margin-top:250px;">
-            <p>Ivana Kurecic <b>(Shaidil)</b> is a
-            <a href="http://www2.mpq.mpg.de/Theorygroup/CIRAC/wiki/index.php/Ivana_Kure_C4_8Di_C4_87.html">PhD student</a>
-            in quantum information theory,<br>
-                leader of the <a href="http://www.happyturtlethings.net/questionable.html">Questionable Journal Club</a>, main organizer of the <a href="icps2015.unizg.hr">ICPS2015</a>,<br>
-                and a juggling dilettante.<br>
-                I'm a terrible cook, and I'm going through representative samples of random countries in hopes of changing my fate <a href="http://www.happyturtlethings.net/cooking.html">here</a>.<br>
-            You can contact me through <a href="mailto:happyturtlethings@gmail.com">e-mail</a>.<br><br>
-            I've been reading scientific literature on amusing topics - let me teach you what you didn't think you wanted to know <a href="post.html">here</a>.</p><br>
-            
-        </center>
-    </body>
+---
+---
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="stylesheets/turtle-style.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/shariff.complete.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=IM+Fell+English' rel="stylesheet" type='text/css'>
+    <title>Unwarranted Cooking Attempts</title>
+  </head>
+  <body>
+    <h2 id="intro">Page Intro</h2>
+    <p>
+       This page only shows posts in the cooking category.
+    </p>
+{% for post in site.categories.cooking %}
+<a href="{{post.url}}"><h3 id="{{ post.short }}" >{{ post.title }}</h3></a>
+    {{ post.content }}
+    <div class="shariff" data-lang="en" data-theme="grey" data-twitter-via="Turtle_Things" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;reddit&quot;]" data-title="{{ post.title }}" data-url="http://happyturtlethings.net{{ post.url }}"></div>
+{% endfor %}
+    <script src="javascripts/shariff.complete.js"></script>
+  </body>
 </html>

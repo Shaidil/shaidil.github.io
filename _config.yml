@@ -5,3 +5,17 @@ defaults:
             type: "posts"
         values:
             layout: "post"
+    -
+        scope:
+            path: "_posts/science"
+            type: "posts"
+        values:
+            categories: "science"
+            permalink: /:year/:month/:day/:title.html
+    -
+        scope:
+            path: "_posts/cooking"
+            type: "posts"
+        values:
+            categories: "cooking"
+            layout: "cooking-post"
